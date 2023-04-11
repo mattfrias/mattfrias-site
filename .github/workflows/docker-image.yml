@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: mattfrias-site:latest
+          tags: mattfrias/mattfrias-site:latest
