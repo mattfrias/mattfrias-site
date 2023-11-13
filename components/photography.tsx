@@ -4,12 +4,12 @@ import React, { useState, useEffect } from "react";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
-import { HiArrowRight } from "react-icons/hi";
 import PhotoAlbum from "react-photo-album";
 import NextImage from "@/components/next-image";
 import { photosData } from "@/lib/data";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import { PiGooglePhotosLogoBold } from "react-icons/pi";
 
 export default function Photography() {
   const { ref } = useSectionInView("Photography", 0.3);
@@ -77,9 +77,9 @@ export default function Photography() {
         <a
           className="flex cursor-pointer items-center gap-1.5 rounded-xl border-black/10 bg-primary bg-opacity-20 px-4 py-3 text-primary outline-none transition hover:scale-110 hover:bg-opacity-30 focus:scale-110 active:scale-105"
           href="https://photos.app.goo.gl/7i8kQgyx1Yq88frv9"
-          download
+          target="_blank"
         >
-          <HiArrowRight className="transition group-hover:-translate-x-[0.05rem]" />
+          <PiGooglePhotosLogoBold className="transition group-hover:-translate-x-[0.05rem]" />
           See More
         </a>
       </motion.div>
