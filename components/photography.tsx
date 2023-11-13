@@ -38,7 +38,7 @@ export default function Photography() {
     >
       <SectionHeading>Photography</SectionHeading>
 
-      <div className="mb-10 w-[400px] items-center justify-center sm:w-[600px] md:w-[800px] lg:w-[950px] xl:w-[1200px]">
+      <div className="mb-10 w-[375px] items-center justify-center sm:w-[600px] md:w-[800px] lg:w-[950px] xl:w-[1200px]">
         <PhotoAlbum
           layout="columns"
           columns={(containerWidth) => {
