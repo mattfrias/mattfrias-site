@@ -15,7 +15,7 @@
   <a href="https://github.com/mattfrias/mattfrias-site/actions/workflows/docker-image.yml" target="_blank">
     <img src="https://github.com/mattfrias/mattfrias-site/actions/workflows/docker-image.yml/badge.svg" alt="Docker Image CI Status" />
   </a>
-	<a>
+	<a href="https://hub.docker.com/r/mattfrias/mattfrias-site" target="_blank">
 		<img src="https://img.shields.io/docker/v/mattfrias/mattfrias-site" alt="Docker Image Version">
 	</a>
 

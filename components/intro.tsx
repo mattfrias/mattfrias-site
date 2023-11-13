@@ -4,7 +4,6 @@ import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
-import { HiMiniCamera } from "react-icons/hi2";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -44,6 +43,7 @@ export default function Intro() {
         <a
           className="group flex cursor-pointer items-center gap-1.5 rounded-xl border-black/10 bg-[#0a66c2] bg-opacity-10 px-4 py-3 text-[#0a66c2] outline-none transition hover:scale-110 hover:bg-opacity-20 focus:scale-110 active:scale-105 dark:brightness-[1.5]"
           href="https://www.linkedin.com/in/mattfrias/"
+          target="_blank"
         >
           <FaLinkedinIn className="text-[1.35rem] transition group-hover:-translate-x-[0.05rem]" />
           LinkedIn
@@ -51,6 +51,7 @@ export default function Intro() {
         <a
           className="group flex cursor-pointer items-center gap-1.5 rounded-xl border-black/10 bg-black bg-opacity-10 px-4 py-3 text-black outline-none transition hover:scale-110 hover:bg-opacity-20 focus:scale-110 active:scale-105 dark:bg-[#c6e2fd] dark:bg-opacity-10 dark:text-[#c6e2fd] dark:hover:bg-opacity-20"
           href="https://github.com/mattfrias"
+          target="_blank"
         >
           <FaGithub className="text-[1.35rem] transition group-hover:-translate-x-[0.05rem]" />
           Github
@@ -58,6 +59,7 @@ export default function Intro() {
         <a
           className="group flex cursor-pointer items-center gap-1.5 rounded-xl border-black/10 bg-[#833ab4] bg-opacity-10 px-4 py-3 text-[#833ab4] outline-none transition hover:scale-110 hover:bg-opacity-20 focus:scale-110 active:scale-105 dark:brightness-[1.5]"
           href="https://instagram.com/mattfrias_"
+          target="_blank"
         >
           <FaInstagram className="text-[1.35rem] transition group-hover:-translate-x-[0.05rem]" />
           Instagram

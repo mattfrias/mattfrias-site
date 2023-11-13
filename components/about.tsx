@@ -24,6 +24,7 @@ export default function About() {
         <a
           className="font-medium transition hover:text-primary"
           href="https://bubblesngolaundry.com"
+          target="_blank"
         >
           laundromat
         </a>{" "}
@@ -31,6 +32,7 @@ export default function About() {
         <a
           className="font-medium transition hover:text-primary"
           href="https://wordpress.com"
+          target="_blank"
         >
           WordPress
         </a>
@@ -39,6 +41,7 @@ export default function About() {
         <a
           className="font-medium transition hover:text-primary"
           href="https://react.dev"
+          target="_blank"
         >
           React
         </a>{" "}
@@ -46,6 +49,7 @@ export default function About() {
         <a
           className="font-medium transition hover:text-primary"
           href="https://nextjs.org"
+          target="_blank"
         >
           Next.js
         </a>
@@ -61,6 +65,7 @@ export default function About() {
         <a
           className="font-medium transition hover:text-primary"
           href="https://instagram.com/frias.jpg"
+          target="_blank"
         >
           photography
         </a>
@@ -68,6 +73,7 @@ export default function About() {
         <a
           className="font-medium transition hover:text-primary"
           href="https://formula1.com"
+          target="_blank"
         >
           Formula 1
         </a>{" "}
