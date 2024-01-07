@@ -1,10 +1,11 @@
+import bngAppImg from "@/public/bubblesngo.png";
+import homelabImg from "@/public/homelab.png";
+import hubskyImg from "@/public/hubsky.png";
+import reciboImg from "@/public/recibo.png";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import bngAppImg from "@/public/bubblesngo.jpg";
-import reciboImg from "@/public/recibo.png";
-import homelabImg from "@/public/homelab.png";
 
 export const links = [
   {
@@ -31,11 +32,27 @@ export const links = [
 
 export const projectsData = [
   {
-    title: "BubblesNGo App",
+    title: "Hubsky",
     description:
-      "Provides a simpler way for customers to request their laundry to be picked up or delivered from a location near them.",
-    tags: ["Expo", "React Native", "Tailwind CSS", "Typescript", "Express.js"],
+      "An iOS app built for UConn students which allows them to view dining hall menus, organize their classes, and view service statuses.",
+    tags: [
+      "React Native",
+      "Expo",
+      "Tailwind CSS",
+      "React Navigation",
+      "OneSignal",
+      "Vexo",
+    ],
+    imageUrl: hubskyImg,
+    link: "https://hubsky.top",
+  },
+  {
+    title: "BubblesNGo",
+    description:
+      "The app provides a simpler way for customers to request their laundry to be picked up or delivered from a location near them.",
+    tags: ["React Native", "Expo", "Tailwind CSS", "Typescript", "Express.js"],
     imageUrl: bngAppImg,
+    link: "#0",
   },
   {
     title: "Recibo",
@@ -43,6 +60,7 @@ export const projectsData = [
       "Background running script meant to periodically scan an email account for unread messages that match a specific subject, download the message contents, format it to plain text, and send it to a receipt printer.",
     tags: ["Python", "Email", "IMAP"],
     imageUrl: reciboImg,
+    link: "https://github.com/mattfrias/recibo",
   },
   {
     title: "Homelab",
@@ -50,6 +68,7 @@ export const projectsData = [
       "Running a variety of self-hosted services to learn more about networking and server administration.",
     tags: ["Ubiquiti", "ESXi", "Linux", "Docker", "Plex", "Sonarr", "Radarr"],
     imageUrl: homelabImg,
+    link: "#0",
   },
 ] as const;
 
@@ -63,7 +82,7 @@ export const skillsData = [
   "Next.js",
   "Node.js",
   "Express.js",
-  "Git",
+  "Git/Github",
   "Tailwind CSS",
   "Computer Networks",
   "Ubiquiti",
