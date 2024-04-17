@@ -5,7 +5,7 @@
   mattfrias.com - v2
 </h1>
 <p align="center">
-  The second iteration of <a href="https://mattfrias.com" target="_blank">mattfrias.com</a> built with <a href="https://nextjs.org" target="_blank">Next.js</a>, <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>, <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>, and <a href="https://www.framer.com/motion/" target="_blank">Framer Motion</a> Coded on <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> and hosted on <a href="https://www.docker.com/" target="_blank">Docker</a>.
+  The second iteration of <a href="https://mattfrias.com" target="_blank">mattfrias.com</a> built with <a href="https://nextjs.org" target="_blank">Next.js</a>, <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>, <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a>, and <a href="https://www.framer.com/motion/" target="_blank">Framer Motion</a>. Coded on <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> and hosted on <a href="https://www.docker.com/" target="_blank">Docker</a>.
 </p>
 <p align="center">
   Previous iterations:
