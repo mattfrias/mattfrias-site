@@ -34,7 +34,7 @@ export default function Intro() {
       >
         <a
           className="group flex cursor-pointer items-center gap-1.5 rounded-xl border-black/10 bg-primary bg-opacity-20 px-4 py-3 text-primary outline-none transition hover:scale-110 hover:bg-opacity-30 focus:scale-110 active:scale-105"
-          href="/MFResume.pdf"
+          href="/MatthewFriasResume.pdf"
           download
         >
           <HiDownload className="transition group-hover:-translate-x-[0.05rem]" />
