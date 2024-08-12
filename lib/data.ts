@@ -41,7 +41,7 @@ export const projectsData = [
       "Tailwind CSS",
       "React Navigation",
       "OneSignal",
-      "Vexo",
+      "Amplitude",
     ],
     imageUrl: hubskyImg,
     link: "https://hubsky.top",
@@ -65,8 +65,17 @@ export const projectsData = [
   {
     title: "Homelab",
     description:
-      "Running a variety of self-hosted services to learn more about networking and server administration.",
-    tags: ["Ubiquiti", "ESXi", "Linux", "Docker", "Plex", "Sonarr", "Radarr"],
+      "Running a variety of services to learn more about networking and server administration. Needs to be cable managed.",
+    tags: [
+      "Ubiquiti",
+      "Synology",
+      "ESXi",
+      "Linux",
+      "Docker",
+      "Plex",
+      "Radarr",
+      "Sonarr",
+    ],
     imageUrl: homelabImg,
     link: "#0",
   },
