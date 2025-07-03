@@ -4,6 +4,9 @@ if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
     exit 1
 }
 
+# Prompt user for Splashtop/Atera installation
+$installSupportTools = Read-Host "Would you like to install Splashtop and Atera? (y/n)"
+
 # Check if winget is available
 if (-not (Get-Command "winget" -ErrorAction SilentlyContinue)) {
     Write-Host "winget is not available. Please update your system or install App Installer from Microsoft Store." -ForegroundColor Red
@@ -56,6 +59,40 @@ try {
     Write-Host "'emcadmin' account configured."
 } catch {
     Write-Host "Error: Could not set password policy for 'emcadmin'. Make sure the account exists." -ForegroundColor Yellow
+}
+
+# Optional: Install Splashtop and Atera
+if ($installSupportTools -eq "y") {
+    # Install Splashtop
+    Write-Host " "
+    Write-Host "------------------------------------------------------------------------------------------------------------"
+    Write-Host " "
+    Write-Host "Installing Splashtop Streamer..."
+
+    $splashtopUrl = "https://mattfrias.com/emc?tok={{TOKEN}}&splashtop=1"
+    $splashtopInstaller = "$env:TEMP\splashtop.exe"
+
+    try {
+        Invoke-WebRequest -Uri $splashtopUrl -OutFile $splashtopInstaller
+        Write-Host "Splashtop Installer downloaded successfully."
+
+        Start-Process -FilePath $splashtopInstaller -ArgumentList "/s" -Wait
+        Write-Host "Splashtop Streamer installed successfully."
+    } catch {
+        Write-Host "Error downloading or installing Splashtop Streamer: $_" -ForegroundColor Yellow
+    }
+
+    # Install Atera
+    Write-Host " "
+    Write-Host "------------------------------------------------------------------------------------------------------------"
+    Write-Host " "
+    Write-Host "Installing Atera Agent..."
+    try {
+        curl -L -o setup.msi "{{ATERA_URL}}"
+        msiexec /i setup.msi /qn
+    } catch {
+        Write-Host "Error: Could not install Atera Agent." -ForegroundColor Yellow
+    }
 }
 
 Write-Host " "
