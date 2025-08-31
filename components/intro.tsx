@@ -19,11 +19,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hey I&apos;m Matt.</span> I&apos;m a{" "}
-        <span className="font-bold">college graduate</span> with a degree in{" "}
-        <span className="font-bold">CompSci</span> from the{" "}
-        <span className="font-bold">University of Connecticut</span>. I enjoy
-        building <span className="italic">sites & apps</span>.
+        <span className="font-bold">Hey I&apos;m Matt.</span> I&apos;m an{" "}
+        <span className="font-bold">IT Support Manager</span> working with{" "}
+        <span className="font-bold">EMC IT Solutions</span> located in{" "}
+        <span className="font-bold">New York City</span>. I enjoy building{" "}
+        <span className="italic">sites & apps</span>.
       </motion.h1>
 
       <motion.div

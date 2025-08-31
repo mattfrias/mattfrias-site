@@ -65,7 +65,7 @@ export const projectsData = [
   {
     title: "Homelab",
     description:
-      "Running a variety of services to learn more about networking and server administration. Needs to be cable managed.",
+      "Running a variety of services to learn more about networking and server administration. The cleanest it's ever looked.",
     tags: [
       "Ubiquiti",
       "Synology",
