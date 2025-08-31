@@ -69,7 +69,7 @@ export const projectsData = [
     tags: [
       "Ubiquiti",
       "Synology",
-      "ESXi",
+      "Proxmox",
       "Linux",
       "Docker",
       "Plex",
@@ -95,7 +95,7 @@ export const skillsData = [
   "Tailwind CSS",
   "Computer Networks",
   "Ubiquiti",
-  "VMware ESXi",
+  "Proxmox",
   "Swift",
   "Wordpress",
   "C/C++",
